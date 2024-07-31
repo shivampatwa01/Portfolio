@@ -17,10 +17,10 @@
             <div class="right">
                 <ul>
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#home" >Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about" class="prop">About</a>
                     </li>
                     <li>
                         <a href="#skills">Skills</a>
@@ -40,7 +40,7 @@
                     <h1 class="bg-text">
                         Dream! Believe! Work hard!
                         <br>
-                        <span class="text-primary">Life is what you make it. </span>
+                        <span id="element" class="text-primary">Life is what you make it. </span>
                     </h1>
                     <a href="" target="_blank" class="btn">Resume</a>
                 </div>
@@ -109,12 +109,11 @@
                 <div class="skill-detail">GIT</div>
             </div>
             <div class="skill-box">
-                <h1 class="skill-box-head">Managerial Skills</h1>
-                <div class="skill-detail"><p>hffkyfufffuLofy rem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugiat nisi quod. </p> </div>
-                <div class="skill-detail">hffkyfufffufy</div>
-                <div class="skill-detail">hffkyfufffufy</div>
-                <div class="skill-detail">hffkyfufffufy</div>
-                <div class="skill-detail">hffkyfufffufy</div>
+                <h1 class="skill-box-head">Soft Skills</h1>
+                <div class="skill-detail">Team Lead</div>
+                <div class="skill-detail">Event Management</div>
+                <div class="skill-detail">Time Management</div>
+               
             </div>
         </div>
     </div>
@@ -123,27 +122,30 @@
            <h1 class="text-primary">Projects</h1>
            <div class="project-box">
             <div class="project-box-content">
-                <p>hdjcvzszvczshdc</p>
+                <p>I made a full stack renting car website through which user can rent car for their use, Admin can also perform CRUD operations on cars. <a href="https://github.com/shivampatwa01/Drivo" class="link-col">Link</a></p>
             </div>
            </div>
            <div class="project-box">
             <div class="project-box-content">
-                <p>hvjvdsvas</p>
+                <p>I made a backend API that gives access to authenticated user to create a blog and perform CRUD operations on blogs. 
+                    Authentication is achieved using JWT Token.  <a href="" class="link-col">Link</a>
+                </p>
             </div>
            </div>
            <div class="project-box">
             <div class="project-box-content">
-                <p>jgkusdggdj</p>
+                <p>I made a responsive e-commerse site containing home page and cart for items. Users can add multiple items to the cart and can also remove item from cart. <a href="https://shivampatwa01.github.io/sopify/" class="link-col">Link</a></p>
             </div>
            </div>
            <div class="project-box">
             <div class="project-box-content">
-                <p>hjgdascjkgc</p>
+                <p>I made Rock Paper Scissors Game using HTML,CSS and Javascript, Play and Enjoy!! <a href="https://shivampatwa01.github.io/stonePaperScissors/" class="link-col">Link</a> </p>
             </div>
            </div>
            <div class="project-box">
             <div class="project-box-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quas consequatur eveniet eligendi, facere est quo architecto tempora! Dignissimos qui quibusdam recusandae excepturi quis, fuga assumenda fugiat facilis natus unde!</p>
+                <p>I have made a Portfolio to display my skills in a better way. I have made it simple using the basics of HTML, CSS and JavaScript .
+                     I have used Formspree to get responses of message in the data sheet which can be viewed by me.</p>
             </div>
            </div>
            
@@ -152,22 +154,23 @@
         <h1>Give Your <span class="text-primary">Feedback</span> Here</h1>
         <div class="contact-box">
             <p class="contact-head">shoot me a <span class="text-primary">Message</span></p>
-            <form action="" class="form-content">
+            <form action="https://formspree.io/f/movajwll"
+            method="POST" class="form-content">
                 <div class="contact-p">
                     <p>First Name</p>
-                <input type="text" placeholder="Enter Your First Name" class="message-box" >
+                <input required type="text" name="firstName" placeholder="Enter Your First Name" autocomplete="off" class="message-box" >
                 </div>
                 <div class="contact-p">
                     <p>Last Name</p>
-                <input type="text" placeholder="Enter Your Last Name" class="message-box" >
+                <input required type="text" name="lastName" placeholder="Enter Your Last Name" autocomplete="off" class="message-box" >
                 </div>
                 <div class="contact-p">
                     <p>Email</p>
-                <input type="email" placeholder="Enter Your Email" class="message-box">
+                <input required type="email" name="email" placeholder="Enter Your Email" autocomplete="off" class="message-box">
                  </div>
                 <div class="contact-p">
                     <p>Message</p>
-                <textarea name="" placeholder="Enter Your Message" id="" cols="30" rows="10" class="message-box"></textarea>
+                <textarea required name="message" placeholder="Enter Your Message" autocomplete="off" id="" cols="30" rows="10" class="message-box"></textarea>
                 </div>
                 <input type="submit" class="btn submit-btn" value="Send Message">
     
@@ -179,6 +182,14 @@
         Copyright &copy;: ShivamPatwa
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- <script>
+        var typed = new Typed('#element', {
+          strings: ['', 'Life is what you make it.'],
+          typeSpeed: 60,
+        });
+      </script> -->
+      <script src="script.js"></script>
+  
 </body>
 </html>
