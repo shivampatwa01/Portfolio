@@ -278,6 +278,9 @@ nav ul li{
     font-size: 18px;
     font-weight: 700;
 }
+.link-col:hover{
+    color:black;
+}
 
 /* contact */
 
