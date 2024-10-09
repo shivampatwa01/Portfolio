@@ -188,7 +188,7 @@ nav ul li{
     border: solid black;
     border-radius: 1rem;
     background-color: white;
-    min-height: 500px;
+    min-height: 530px;
     width: 300px;
 }
 .skill-box-head{
@@ -212,7 +212,7 @@ nav ul li{
    
 }
 .skill-detail p{
-    text-align: center;
+    text-align: left;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
